@@ -1,21 +1,30 @@
-
+<!-- HTML5 doctype (not worries about IE8 and below) -->
 <!DOCTYPE HTML>
 
 <html>
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>Task bar</title>
+	<!-- Stops search engines from indexing the page -->
+	<meta name="robots" content="noindex">
+	<title>ATS Improvements</title>
+	<!-- Base style sheet -->
 	<link rel="stylesheet" type="text/css" href="assets/css/standard.css">
+	<!-- All things linked with the sprite are in this css file -->
 	<link rel="stylesheet" type="text/css" href="assets/css/sprite.css">
+	<!-- Normalises web browser implementation of web standards -->
 	<link rel="stylesheet" type="text/css" href="assets/css/normalise.css">
+	<!-- jQuery - figure it'll come in handy at some point -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
 
 <body>
+
 <div id="outer_container">
+	<!-- main_container: Sets width and centre aligns the content -->
 	<div id="main_container">
 		<h1>Applicant Tracking System improvements</h1>
+		<!-- Header changes detail section start -->
 		<h2>Header/Primary navigation</h2>
 		<p class="lead">The main issue with the header is  navigation, there are to many options and not all are strictly necessary (atleast not as primary navigation). The styling also could be improved dramatically - colour contrast, spacing and images all need to be reviewed/improved.</p>
 		<p>Acceptance criteria</p>
@@ -23,7 +32,7 @@
 			<li>Remove the tasks navigation option - you get the same options on dashboard</li>
 			<li>Remove random semicolons and italic style on links below your name</li>
 			<li>Remove space before colon</li>
-			<li>Increase height and improve spacing</li>
+			<li>Increase height and improve spacing (see image below)</li>
 			<li>Remove old Civil Service Resourcing logo and apply new one below the top banner (do we make it so that it only appears on the homepage?)</li>
 			<li>Remove magnifine glass icon</li>
 			<li>Move the 'Search all' navigation option to the main menu (secondary navigation)</li>
@@ -48,9 +57,16 @@
 			</ul>
 		</ul>
 		<img src="Header.png" width="100%">
+		<!-- Typography section start -->
 		<h2>Typography</h2>
 		<p class="lead">Hierarchy is unclear on many pages as there is a lack of consistency when it comes to headings, paragraphs, labels, spacing.</p>
 		<h3>Headings</h3>
+		<h1 class="head_1">H1 - a <span class="blue">36px bold</span> heading</h1>
+		<h2 class="head_2">H2 - a <span class="blue">24px bold</span> heading</h2>
+		<h3 class="head_3">H3 - a <span class="blue">19px bold</span> heading</h3>
+		<h4 class="head_4">H4 - a <span class="blue">19px </span>heading</h4>
+		<h3>Heading with a subheading</h3>
+		<h1 class="head_1">Example heading</h1>
 
 		<h2>Iconography</h2>
 		<p class="lead">Icons have performed badly in usability tests. Users don't understand the meaning behind the images and some of the options which are available simply are not understood.</p> <p>By rationalising the icons and improving the quality of the graphics we believe that users will be able to find relevant content quickly without help. We'll also look to ask for additional input when certain icons are selected to speed up the process of accessing relevant content.</p>

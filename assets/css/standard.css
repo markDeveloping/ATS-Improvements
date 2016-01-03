@@ -4,10 +4,36 @@
 	margin-right: auto;
 }
 
+/* Lead paragraph increased font size */
 .lead {
 	font-size: 24px;
 }
 
+/* Typography CSS start */
+.head_1 {
+	font-size: 36px;
+	font-weight: bold;
+}
+
+.head_2 {
+	font-size: 26px;
+	font-weight: bold;
+}
+
+.head_3 {
+	font-size: 19px;
+	font-weight: bold;
+}
+
+.head_4 {
+	font-size: 19px;
+}
+
+.blue {
+	color: #005EA5;
+}
+
+/* edits background colour of icons when they're hovered over */
 .navlist a:hover {
 	background-color: #4A90E2;
 	color: #F8F8F8;
