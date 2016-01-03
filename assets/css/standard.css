@@ -4,29 +4,67 @@
 	margin-right: auto;
 }
 
+/* sets an example tag */
+.example {
+	background-color: #6F777B;
+	padding: 3px;
+	color: #fff;
+	font-weight: normal;
+}
+
+/* sets example container with tag */
+.example_container {
+	padding: 15px;
+	border: 1px solid #BFC1C3;
+	margin: 0;
+}
+
+.example_container::before {
+	content: "Example";
+	border: 1px solid #BFC1C3;
+	margin: 0;
+	background-color: #6F777B;
+	padding: 3px;
+	color: #fff;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
 /* Lead paragraph increased font size */
 .lead {
 	font-size: 24px;
 }
 
 /* Typography CSS start */
+/*headings*/
 .head_1 {
-	font-size: 36px;
+	font-size: 48px;
 	font-weight: bold;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 .head_2 {
-	font-size: 26px;
+	font-size: 36px;
 	font-weight: bold;
+	margin-top: 30px;
+	margin-bottom: 25px;
 }
 
 .head_3 {
-	font-size: 19px;
+	font-size: 24px;
 	font-weight: bold;
+	margin-top: 25px;
+	margin-bottom: 20px;
 }
 
-.head_4 {
-	font-size: 19px;
+/* Heading secondary */
+.head_secondary {
+	display: block;
+	color: #6F777B;
+	font-size: 24px;
+	font-weight: normal;
 }
 
 .blue {
