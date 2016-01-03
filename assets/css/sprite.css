@@ -1,0 +1,101 @@
+.sprite {
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-Create-vacancy {
+    width: 100px;
+    height: 100px;
+    background-position: -5px -5px;
+}
+
+li:hover .sprite-Create-vacancy {
+    width: 100px;
+    height: 100px;
+    background-position: -115px -5px;
+}
+
+.sprite-Go {
+    width: 37px;
+    height: 23px;
+    background-position: -225px -5px;
+}
+
+.sprite-List-vacancies {
+    width: 100px;
+    height: 100px;
+    background-position: -272px -5px;
+}
+
+li:hover .sprite-List-vacancies {
+    width: 100px;
+    height: 100px;
+    background-position: -5px -115px;
+}
+
+.sprite-Mag-Glass {
+    width: 23px;
+    height: 23px;
+    background-position: -382px -5px;
+}
+
+.sprite-Report-dashboard {
+    width: 100px;
+    height: 100px;
+    background-position: -115px -115px;
+}
+
+li:hover .sprite-Report-dashboard {
+    width: 100px;
+    height: 100px;
+    background-position: -225px -115px;
+}
+
+.sprite-Review-applications {
+    width: 100px;
+    height: 100px;
+    background-position: -5px -225px;
+}
+
+li:hover .sprite-Review-applications {
+    width: 100px;
+    height: 100px;
+    background-position: -115px -225px;
+}
+
+.sprite-Shortlist-candidates {
+    width: 100px;
+    height: 100px;
+    background-position: -225px -225px;
+}
+
+li:hover .sprite-Shortlist-candidates {
+    width: 100px;
+    height: 100px;
+    background-position: -415px -5px;
+}
+
+.sprite-Upload-final-results {
+    width: 100px;
+    height: 100px;
+    background-position: -335px -115px;
+}
+
+li:hover .sprite-Upload-final-results {
+    width: 100px;
+    height: 100px;
+    background-position: -335px -225px;
+}
+
+.sprite-assessment {
+    width: 100px;
+    height: 100px;
+    background-position: -5px -335px;
+}
+
+li:hover .sprite-assessment {
+    width: 100px;
+    height: 100px;
+    background-position: -115px -335px;
+}

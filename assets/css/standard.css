@@ -1,0 +1,49 @@
+#main_container {
+	max-width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.lead {
+	font-size: 24px;
+}
+
+.navlist a:hover {
+	background-color: #4A90E2;
+	color: #F8F8F8;
+}
+
+.navlist {
+	margin: 15px;
+	padding: 0;
+}
+
+.sprite {
+	opacity: 1.7;
+	vertical-align: middle;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.navlist a {
+	text-decoration: none;
+	padding-bottom: 8px;
+	border-radius: 5px;
+	color: #585C5F;
+	display: block;
+	width: 120px;
+	text-align: center;
+}
+
+ul.navlist {
+	list-style-type: none;
+}
+.navlist li {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 3px;
+}
+
+* {
+    -webkit-font-smoothing: subpixel-antialiased!important;
+}

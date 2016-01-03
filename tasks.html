@@ -1,0 +1,217 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Task bar</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/Standard.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/Sprite.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/normalise.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+
+<body>
+<div id="outer_container">
+	<div id="main_container">
+		<h1>Applicant Tracking System improvements</h1>
+		<h2>Header/Primary navigation</h2>
+		<p class="lead">The main issue with the header is  navigation, there are to many options and not all are strictly necessary (atleast not as primary navigation). The styling also could be improved dramatically - colour contrast, spacing and images all need to be reviewed/improved.</p>
+		<p>Acceptance criteria</p>
+		<ul>
+			<li>Remove the tasks navigation option - you get the same options on dashboard</li>
+			<li>Remove random semicolons and italic style on links below your name</li>
+			<li>Remove space before colon</li>
+			<li>Increase height and improve spacing</li>
+			<li>Remove old Civil Service Resourcing logo and apply new one below the top banner (do we make it so that it only appears on the homepage?)</li>
+			<li>Remove magnifine glass icon</li>
+			<li>Move the 'Search all' navigation option to the main menu (secondary navigation)</li>
+			<li>Make font colour white</li>
+			<li>Apply -webkit-font-smoothing: antialiased to all elements</li>
+			<li>Apply a simple white border to #searchContainer</li>
+			<li>Remove image from #global and apply background colour: #4576BF</li>
+			<li>Remove the 'go' icon replace with new green icon - all icons to be provided to WCN as a sprite.</li>
+			<li>Remove the left and right margin and border from #maincontentdiv</li>
+			<li>Remove div at bottom of page (grey footer) as it doesn't appear to add anything</li>
+			<li>Remove all arrows frmo the #searchOptions container</li>
+			<li>Place the magnifine glass inside the search box - to replace the right arrow graphic</li>
+			<li>Remove 'Status' link - statuses can be accessed via the widget</li>
+			<li>Consider whether we need to remove any other links below the search box</li>
+			<li>Add H1 Your dashboard (every page should have a H1) and add text below H1 'Create job adverts and manage applications'</li>
+			<li>Conditional page elements:</li>
+			<ul>
+				<li>Only show 'Change system' if user has access to more than one system.</li>
+				<li>Only display the Results, Recent, Saved and Selecion navigation options if user has role: Recruiter, System Administrator or Retained team - these links are otherwise confusing, non descriptive and add to the 'noise'.</li>
+				<li>Only show 'Recruitment area' if user has access to more than one owner pool.</li>
+				<li>If user is not an system administrator link help to new system guidance which is being created on GOV.UK.</li>
+			</ul>
+		</ul>
+		<img src="Header.png" width="100%">
+		<h2>Typography</h2>
+		<p class="lead">Hierarchy is unclear on many pages as there is a lack of consistency when it comes to headings, paragraphs, labels, spacing.</p>
+		<h3>Headings</h3>
+
+		<h2>Iconography</h2>
+		<p class="lead">Icons have performed badly in usability tests. Users don't understand the meaning behind the images and some of the options which are available simply are not understood.</p> <p>By rationalising the icons and improving the quality of the graphics we believe that users will be able to find relevant content quickly without help. We'll also look to ask for additional input when certain icons are selected to speed up the process of accessing relevant content.</p>
+		<h3>Vacancy holder 1, 2 and 4</h3>
+		<div id="task_container">
+			<ul class="navlist">
+				<li onmouseover="$(this).children('i:first').removeClass('sprite-Create-vacancy').addClass('sprite-Create-vacancy-light')">
+					<a href=""><i class="sprite sprite-Create-vacancy" onmouseover="$(this).toggleClass('sprite-Create-vacancy-light')"></i>
+						Create a vacancy
+					</a>
+				</li>
+				<li>
+					<a href=""><i class="sprite sprite-List-vacancies"></i>
+						List all vacancies
+					</a>
+				</li>
+				<li>
+					<a href=""><i class="sprite sprite-Review-applications"></i>
+						Review applications
+					</a>
+				</li>
+				<li>
+					<a href=""><i class="sprite sprite-Shortlist-candidates"></i>
+						Shortlist candidates
+					</a>
+				</li>
+				<li>
+					<a href=""><i class="sprite sprite-assessment"></i>
+						Schedule interviews
+					</a>
+				</li>
+				<li>
+					<a href=""><i class="sprite sprite-Upload-final-results"></i>
+						Upload final results
+					</a>
+				</li>
+			</ul>
+		</div>
+		<h3>Vacancy holder 3 (used by volume recruitment team vacancy managers)</h3>
+		<div id="task_container">
+			<ul class="navlist">
+				<li>
+					<a href=""><i class="sprite sprite-Create-vacancy"></i>
+						Create a vacancy
+					</a>
+				</li>
+				<li>
+					<a href=""><i class="sprite sprite-List-vacancies"></i>
+						List all vacancies
+					</a>
+				</li>
+				<li>
+					<a href=""><i class="sprite sprite-Review-applications"></i>
+						Review applications
+					</a>
+				</li>
+				<li>
+					<a href=""><i class="sprite sprite-Shortlist-candidates"></i>
+						Shortlist candidates
+					</a>
+				</li>
+				<li>
+					<a href=""><i class="sprite sprite-Upload-final-results"></i>
+						Upload final results
+					</a>
+				</li>
+			</ul>
+		</div>
+		<h3>Recruiter and System administrator</h3>
+		<div id="task_container">
+			<ul class="navlist">
+				<li>
+					<a href=""><i class="sprite sprite-Create-vacancy"></i>
+						Create a vacancy
+					</a>
+				</li>
+				<li>
+					<a href=""><i class="sprite sprite-List-vacancies"></i>
+						List all vacancies
+					</a>
+				</li>
+				<li>
+					<a href=""><i class="sprite sprite-Review-applications"></i>
+						Review applications
+					</a>
+				</li>
+				<li>
+					<a href=""><i class="sprite sprite-Shortlist-candidates"></i>
+						Shortlist candidates
+					</a>
+				</li>
+				<li>
+					<a href=""><i class="sprite sprite-assessment"></i>
+						Schedule interviews
+					</a>
+				</li>
+				<li>
+					<a href=""><i class="sprite sprite-Upload-final-results"></i>
+						Upload final results
+					</a>
+				</li>
+				<li>
+					<a href=""><i class="sprite sprite-Report-dashboard"></i>
+						Reports dashboard
+					</a>
+				</li>
+			</ul>
+		</div>
+		<h3>Retained team</h3>
+		<div id="task_container">
+			<ul class="navlist">
+				<li>
+					<a href=""><i class="sprite sprite-Create-vacancy"></i>
+						Create a vacancy
+					</a>
+				</li>
+				<li>
+					<a href=""><i class="sprite sprite-List-vacancies"></i>
+						List all vacancies
+					</a>
+				</li>
+				<li>
+					<a href=""><i class="sprite sprite-Review-applications"></i>
+						Review applications
+					</a>
+				</li>
+				<li>
+					<a href=""><i class="sprite sprite-Shortlist-candidates"></i>
+						Shortlist candidates
+					</a>
+				</li>
+				<li>
+					<a href=""><i class="sprite sprite-Upload-final-results"></i>
+						Upload final results
+					</a>
+				</li>
+				<li>
+					<a href=""><i class="sprite sprite-Report-dashboard"></i>
+						Reports dashboard
+					</a>
+				</li>
+			</ul>
+		</div>
+		<h3>Advert only</h3>
+		<div id="task_container">
+			<ul class="navlist">
+				<li>
+					<a href=""><i class="sprite sprite-Create-vacancy"></i>
+						Create a vacancy
+					</a>
+				</li>
+				<li>
+					<a href=""><i class="sprite sprite-List-vacancies"></i>
+						List all vacancies
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+</body>
+
+</html>
