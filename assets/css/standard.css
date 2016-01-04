@@ -4,6 +4,20 @@
 	margin-right: auto;
 }
 
+/* link style */
+a {
+	color: #005EA5;
+}
+
+a:hover {
+	color: #2E8ACA;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #4C2C92;
+}
+
 /* sets an example tag */
 .example {
 	background-color: #6F777B;
