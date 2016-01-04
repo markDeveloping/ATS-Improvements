@@ -26,32 +26,32 @@
 		<h1>Applicant Tracking System improvements</h1>
 		<!-- Header changes detail section start -->
 		<h2>Header/Primary navigation</h2>
-		<p class="lead">The main issue with the header is  navigation, there are to many options and not all are strictly necessary (atleast not as primary navigation). The styling also could be improved i.e. colour contrast, spacing and images all need to be reviewed.</p>
+		<p class="lead">The main issue with the header is  navigation, there are to many options and not all are strictly necessary (at least not as primary navigation). The styling also could be improved i.e. colour contrast, spacing and images all need to be reviewed.</p>
 		<p>Acceptance criteria</p>
 		<ul>
 			<li>Remove the tasks navigation option - you get the same options on dashboard</li>
 			<li>Remove random semicolons and italic style on links below your name</li>
 			<li>Remove space before colon</li>
 			<li>Increase height and improve spacing (see image below)</li>
-			<li>Remove old Civil Service Resourcing logo and apply new one below the top banner (only to appear on the dashboard))</li>
-			<li>Remove magnifine glass icon</li>
+			<li>Remove old Civil Service Resourcing logo and apply new one below the top banner (only to appear on the dashboard)</li>
+			<li>Remove magnifying glass icon</li>
 			<li>Move the 'Search all' navigation option to the main menu (secondary navigation)</li>
 			<li>Make font colour white</li>
 			<li>Apply -webkit-font-smoothing: antialiased to all elements</li>
 			<li>Apply a simple white border to #searchContainer</li>
 			<li>Remove image from #global and apply background colour: #4576BF</li>
-			<li>Remove the 'go' icon replace with new green icon - all icons to be provided to WCN as a sprite.</li>
-			<li>Remove the left and right margin and border from #maincontentdiv</li>
+			<li>Remove the 'go' icon replace with new green icon - all icons to be provided to WCN as a sprite</li>
+			<li>Remove the left and right margin and border from #maincontent div</li>
 			<li>Remove div at bottom of page (grey footer) as it doesn't appear to add anything</li>
-			<li>Remove all arrows frmo the #searchOptions container</li>
-			<li>Place the magnifine glass inside the search box - to replace the right arrow graphic</li>
+			<li>Remove all arrows from the #searchOptions container</li>
+			<li>Place the magnifying glass inside the search box - to replace the right arrow graphic</li>
 			<li>Remove 'Status' link - statuses can be accessed via the widget</li>
 			<li>Consider whether we need to remove any other links below the search box</li>
 			<li>Add H1 Your dashboard (every page should have a H1) and add text below H1 'Create job adverts and manage applications'</li>
 			<li>Conditional page elements:</li>
 			<ul>
 				<li>Only show 'Change system' if user has access to more than one system.</li>
-				<li>Only display the Results, Recent, Saved and Selecion navigation options if user has role: Recruiter, System Administrator or Retained team - these links are otherwise confusing, non descriptive and add to the 'noise'.</li>
+				<li>Only display the Results, Recent, Saved and Selection navigation options if user has role: Recruiter, System Administrator or Retained team - these links are otherwise confusing, non descriptive and add to the 'noise'.</li>
 				<li>Only show 'Recruitment area' if user has access to more than one owner pool.</li>
 				<li>If user is not an system administrator link help to new system guidance which is being created on GOV.UK.</li>
 			</ul>
@@ -60,7 +60,7 @@
 		<img src="Header.png" width="100%">
 		<!-- Breadcrumb section to aid with navigation -->
 		<h2>Breadcrumb navigation</h2>
-		<p>Breadcrumbs help users to understand where they are, it is a useful tool for large information systems with deep levels like ours and is widely considered as a 'best practice'. I would recommend that we therefore introduce breadcrumbs on all vacancy holder and recruiter views where it makes sence to have them.</p>
+		<p>Breadcrumbs help users to understand where they are, it is a useful tool for large information systems with deep levels like ours and is widely considered as a 'best practice'. I would recommend that we therefore introduce breadcrumbs on all vacancy holder and recruiter views where it makes sense to have them.</p>
 		<h3>Acceptance criteria</h3>
 		<ul>
 			<li>Place breadcrumbs at the top of the page (below header)</li>
@@ -75,14 +75,14 @@
 		<!-- Typography section start -->
 		<h2>Typography</h2>
 		<p class="lead">Hierarchy is unclear on many pages and there is a lack of consistency when it comes to headings, paragraphs, labels, spacing.</p>
-		<h3>Acceptanct criteria</h3>
+		<h3>Acceptance criteria</h3>
 			<ul>
 				<li>Implement a basic sans-serif font family</li>
 				<li>Place h1 below breadcrumb or tool bar where present</li>
 				<li>Apply -webkit-font-smoothing to all elements</li>
 				<li>Introduce the changes to headings, paragraphs and links as outlined in the below examples</li>
 			</ul>
-			<p>(Note: The implementation of many of these elements will become clearer when futher prototypes are provided.)</p>
+			<p>(Note: The implementation of many of these elements will become clearer when further prototypes are provided.)</p>
 
 		<h3>Headings</h3>
 		<div class="example_container">
@@ -90,7 +90,7 @@
 		<h2 class="head_2">A <span class="blue">36px bold</span> heading</h2>
 		<h3 class="head_3">A <span class="blue">24px bold</span> heading</h3>
 		</div>
-		<h3>Heading with a subheading</h3>
+		<h3>Heading with a secondary heading</h3>
 		<div class="example_container">
 		<h1 class="head_1">Dashboard<span class="head_secondary">Create job adverts and manage applications</span></h1>
 		</div>
@@ -108,7 +108,7 @@
 		<h3>Acceptance criteria</h3>
 		<ul>
 			<li>Users will see different icons based upon their role.</li>
-			<li>User will be prompted to provide further input imediately after selecting certain icons e.g. Review applications.</li>
+			<li>User will be prompted to provide further input immediately after selecting certain icons e.g. Review applications.</li>
 		</ul>
 		<h3>Vacancy holder 1, 2 and 4</h3>
 		<div class="example_container">
@@ -280,6 +280,9 @@
 			</ul>
 		</div>
 		</div>
+		<h2>Interview widget</h2>
+			<p>This is a useful widget for vacancy holders, not necessary for users with 'Recruiter' role. The styleing needs to be updated as there are colour contrast issues.</p>
+		<h2>Candidate widget</h2>
 	</div>
 </div>
 
