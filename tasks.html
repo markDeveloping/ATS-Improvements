@@ -8,12 +8,12 @@
 	<!-- Stops search engines from indexing the page -->
 	<meta name="robots" content="noindex">
 	<title>ATS Improvements</title>
-	<!-- Base style sheet -->
-	<link rel="stylesheet" type="text/css" href="assets/css/standard.css">
 	<!-- All things linked with the sprite are in this css file -->
 	<link rel="stylesheet" type="text/css" href="assets/css/sprite.css">
 	<!-- Normalises web browser implementation of web standards -->
 	<link rel="stylesheet" type="text/css" href="assets/css/normalise.css">
+	<!-- Base style sheet -->
+	<link rel="stylesheet" type="text/css" href="assets/css/standard.css">
 	<!-- jQuery - figure it'll come in handy at some point -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
@@ -280,6 +280,35 @@
 			</ul>
 		</div>
 		</div>
+		<h2>Data</h2>
+		<p>Make some improvements to table style to fit in with the new design suggestions.</p>
+		<h3>Data in a table</h3>
+		<div class="example_container">
+			<div id="applicationOverview">
+			<table>
+				<thead>
+					<tr>
+						<th>Applicant status</th>
+						<th>#</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><a href="#">Help required</a></td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td><a href="#">Awaiting sift</a></td>
+						<td>28</td>
+					</tr>
+					<tr>
+						<td><a href="#">On hold after sift</a></td>
+						<td>4</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		</div>
 		<h2>Interview widget</h2>
 			<p>This is a useful widget for vacancy holders but not for users with a 'Recruiter' role. The styleing needs to be updated as there are colour contrast issues.</p>
 			<h3>Acceptance criteria</h3>
@@ -298,8 +327,30 @@
 			</div>
 		<h2>Candidate widget</h2>
 			<div class="example_container">
-				<div>
-					<br><img src="Applicationsoverview.png">
+				<div id="applicationOverview" class="borderTop">
+				<h2 class="head_3">Application overview</h2>
+					<table>
+					<thead>
+						<tr>
+							<th>Applicant status</th>
+							<th>#</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><a href="#">Help required</a></td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td><a href="#">Awaiting sift</a></td>
+							<td>28</td>
+						</tr>
+						<tr>
+							<td><a href="#">On hold after sift</a></td>
+							<td>4</td>
+						</tr>
+					</tbody>
+					</table>
 				</div>
 			</div>
 	</div>

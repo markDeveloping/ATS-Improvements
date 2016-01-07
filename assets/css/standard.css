@@ -2,6 +2,38 @@
 	max-width: 980px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 50px;
+}
+
+/* table */
+
+table {
+	width: 100%;
+}
+
+th {
+	font-weight: bold;
+	text-align: left;
+	padding: 0.75em 1.25em 0.5625em 0;
+}
+
+td {
+	border-top: 1px solid #bfc1c3;
+	border-bottom: 1px solid #bfc1c3;
+	padding: 0.75em 1.25em 0.5625em 0;
+}
+
+/* applicationOverview container */
+
+#applicationOverview {
+	width: 45%
+}
+
+/* top dividing border */
+
+.borderTop {
+	margin-top: 20px;
+	border-top: 3px solid #6F777B;
 }
 
 /* link style */
